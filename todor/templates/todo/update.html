@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{%block content%}
+<form action="" method="post" class="formulario">
+    <fieldset>
+        <legend>{%block title%}Editar Tarea{%endblock%}</legend>
+        <div class="campo">
+            <label for="title">Titulo:</label>
+            <input type="text" id="title" name="title" required value="{{todo.title}}">
+        </div>
+        <div class="campo">
+            <label for="desc">Descripcion:</label>
+            <textarea id="desc" name="desc" rows="3">{{todo.desc}}</textarea>
+        </div>
+        <br>
+        <div class="campo">
+            <label for="state">Completado:</label>
+            <input type="checkbox" name="state" id="state" {% if todo.state == true %} checked {%endif%}>
+        </div>
+        <hr>
+        <div class="registrar">
+            <input class="btn" type="submit" value="Guardar">
+            <a class="btn" type="submit" href="{{url_for('todo.index')}}">Cancelar</a>
+        </div>
+    </fieldset>
+</form>
+
+        
+{%endblock%}

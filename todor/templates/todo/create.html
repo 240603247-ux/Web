@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+{%block content%}
+<section>
+    
+    <form class="formulario" action="" method="post">
+        <fieldset>
+        <legend>{%block title%}Ingresar Tarea{% endblock %}</legend>
+        <div class="campo">
+            <label for="title">Titulo:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div class="campo">
+            <label for="desc">Descripcion:</label>
+            <textarea name="desc" id="title" name="title" required></textarea>
+        </div>
+        <hr>
+        <div class="registrar">
+            <input class="btn" type="submit" value="Guardar">
+            <a class="btn" type="submit" href="{{url_for('todo.index')}}">Cancelar</a>
+        </div>
+        </fieldset>
+        
+    </form>
+</section>
+{% endblock %}

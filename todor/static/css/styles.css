@@ -1,0 +1,202 @@
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*1REM es 10 px*/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+      font-family: "Raleway", sans-serif;
+      font-size: 1.6rem;
+      line-height: 2;
+}
+
+/**Globales*/
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h1, h2, h3{
+    font-family: "Playfair Display", serif;
+    margin: 0 0 5rem 0;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%; /*la imagen toma el tamano del contenedor  conten 300 imagen 600 */
+    display: block;
+}
+
+/*UTILIDADES*/
+.max-width{
+    max-width: 30rem;
+    height: 5rem;
+}
+
+.btn{
+    background: hsl(145, 68%, 53%);
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background .3s ease-out;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: #278122;
+}
+
+
+/*Navegacion*/
+.nav-principal{
+    
+    padding: 2rem 0;
+    display: flex;
+    flex-direction:row; /*cuatro posibles valores*/
+    /*en direccion row justify-content es para alinear horizontalmente y align-items es vertical*/
+    justify-content: space-between; /*tiene varios valores*/
+    align-items: center; /*tiene varios valores*/
+    background-color: #043b04be;
+}
+.nav-principal a{
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+.nav-principal a:hover{
+    color: #064a1db6;
+}
+.nav-principal .nav-link:nth-child(1){
+    margin-right: 3rem;
+}
+
+
+/*Index*/
+.contendio{
+    text-align: center;
+}
+.contendio h1{
+    margin-bottom: 0;
+}
+.contendio .desc{
+    margin-top: 0;
+}
+.contendio .botones{
+    display: flex;
+    justify-content: center;
+}
+.contendio .btn{
+    background: hsl(207, 4%, 47%);
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background .3s ease-out;
+    border-radius: 5px;
+}
+.contendio .btn:nth-child(1){
+    margin-right: 3rem;
+}
+.contendio .btn:hover{
+    background: #373a30;
+}
+
+
+/*Registrar*/
+.formulario{
+    max-width: 40rem;
+    margin: 0 auto;
+}
+.formulario fieldset{
+    border: 3px solid rgb(8, 57, 12);
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+.formulario legend{
+    background: #0b4213;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo label{
+    flex-basis: 16rem;
+}
+.registar{
+  display: flex;
+  justify-content: center;
+}
+
+/*Mensaje de error cuando ya se encuentra registrado un usuario*/
+.container-error{
+    background-color: #f10e0e;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.container-error p{
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    color: #cf2c2c;
+}
+
+/*TAREAS*/
+.nav-tarea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.nav-tarea h1{
+    margin-bottom: 0;
+}
+body{
+    font-family: sans-serif;
+}
+table{
+    margin: 10rem auto 0;
+    border-collapse: collapse ;
+}
+tr{
+    border: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    td{
+        padding: 11px 32px;
+    }
+}
+.type{
+    color: rgb(0, 0, 0);
+}
+.value{                       
+    color: rgb(23, 68, 41);
+    font-weight: bold;
+}
+.bt1{
+    color: #2ea513;
+}
+.bt2{
+    color: #de0a0a;
+}
